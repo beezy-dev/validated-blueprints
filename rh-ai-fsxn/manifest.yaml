@@ -1,0 +1,15 @@
+---
+blueprint:
+  title: Red Hat OpenShit A
+  cloud: AWS
+  description: A Red Hat OpenShift AI instance running in AWS with Trident configured with FSxN.
+
+stack:
+  platform: rosa
+  components:
+    - trident
+    - fsxn
+    - rhoai
+
+
+    
