@@ -1,0 +1,18 @@
+---
+blueprint:
+  key: mb-bp-example
+  title: Basic EC2
+  cloud: AWS
+  description: AWS EC2 t2.micro with Amazon Linux.
+
+stack:
+  platform: aws
+  components:
+    - ec2
+    - ami
+
+workflow:
+  orchestrators:
+    - opentofu
+
+    

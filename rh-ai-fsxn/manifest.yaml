@@ -1,6 +1,7 @@
 ---
 blueprint:
-  title: Red Hat OpenShit A
+  key: rh-ai-fsxn
+  title: Red Hat OpenShit AI
   cloud: AWS
   description: A Red Hat OpenShift AI instance running in AWS with Trident configured with FSxN.
 
@@ -11,5 +12,10 @@ stack:
     - fsxn
     - rhoai
 
+workflow:
+  orchestrators:
+    - opentofu
+    - rosactl
+    - kubectl
 
     

@@ -1,0 +1,20 @@
+---
+blueprint:
+  key: rh-virt-fsxn
+  title: Red Hat OpenShit Virtualization (Dev)
+  cloud: AWS
+  description: A single-node Red Hat OpenShift Virtualization instance running in AWS with Trident configured with FSxN.
+
+stack:
+  platform: ocp
+  components:
+    - trident
+    - fsxn
+    - kubevirt
+
+workflow:
+  orchestrators:
+    - opentofu
+
+
+    

@@ -1,0 +1,24 @@
+---
+blueprint:
+  key: ntap-vertical-data
+  title: NetApp Vertical Data Movement
+  cloud:
+    - on-prem
+    - azure
+  description: Workshop demonstrating the data movement from an on-premises data source to Azure NetApp File.
+
+stack:
+  platform:
+    - linux
+    - azure
+  components:
+    - vmware
+    - anf
+    - cloud sync
+
+workflow:
+  orchestrators:
+    - opentofu
+
+
+    

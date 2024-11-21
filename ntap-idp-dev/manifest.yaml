@@ -1,0 +1,23 @@
+---
+blueprint:
+  key: ntap-idp-dev
+  title: NetApp IDP (Dev)
+  cloud: AWS
+  description: EC2 instance with Ubuntu configured with nodejs and a running instance of the NetApp BluePrint plugin in Backstage.
+
+stack:
+  platform: ec2
+  components:
+    - ec2
+    - ubuntu
+    - build-essentials
+    - nodejs
+    - netapp-idp-dev
+
+workflow:
+  orchestrators:
+    - opentofu
+    - ansible
+
+
+    

@@ -1,0 +1,24 @@
+---
+blueprint:
+  key: ntap-lateral-data
+  title: NetApp Lateral Data Movement
+  cloud:
+    - aws
+    - azure
+  description: Workshop demonstrating the data movement between two cloud services.
+
+stack:
+  platform:
+    - azure
+    - aws
+  components:
+    - anf
+    - fsxn
+    - cloud sync
+
+workflow:
+  orchestrators:
+    - opentofu
+
+
+    
